@@ -1,4 +1,6 @@
 *.rb linguist-language=Java
+*.js linguist-language=Java
+*.css linguist-language=Java
 assets/vendor/* linguist-vendored
 assets/images/* linguist-vendored=false
 docs/* linguist-documentation
