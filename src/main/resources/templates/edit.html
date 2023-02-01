@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="UTF-8">
+<title>Edit Student</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="/">Student Management System</a>
+		
+		<div>
+			<a class="nav-link text-white ps-5" href="add">Add Student</a>
+		</div>
+	</nav>
+	
+	<div class="container p-5">
+		<div class="pb-1">
+			<h1>Edit Student</h1>
+		</div>
+		
+		<form th:action="@{/editstudent}" method="post" th:object="${std}">
+		  <div class="mx-5 px-5">
+		    <label class="form-label">Student Id</label>
+		    <input type="text" class="form-control " name="id" th:value="${std.id}">
+		  </div>
+		  <div class="mx-5 px-5">
+		    <label class="form-label">Student Name</label>
+		    <input type="text" class="form-control " name="name" th:value="${std.name}">
+		  </div>
+		  <div class="mx-5 px-5">
+		    <label class="form-label">Student classroom</label>
+		    <input type="text" class="form-control " name="classroom" th:value="${std.classroom}">
+		  </div>		
+		  <div class="mx-5 px-5">
+		    <label class="form-label">Student Email</label>
+		    <input type="email" class="form-control " name="email" th:value="${std.email}">
+		  </div>		  
+		  <div class="mx-5 px-5">
+		    <label class="form-label">Student age</label>
+		    <input type="text" class="form-control " name="age" th:value="${std.age}">
+		  </div>
+		  <div class="mx-3 px-5">
+		  	<button type="submit" class="m-5 px-5 btn btn-primary">Submit</button>
+		  </div>
+		</form>
+	
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
