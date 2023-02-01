@@ -1,0 +1,4 @@
+assets/vendor/* linguist-vendored
+assets/images/* linguist-vendored=false
+docs/* linguist-documentation
+docs/formatter.rb linguist-documentation=false
