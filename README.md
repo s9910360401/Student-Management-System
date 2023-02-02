@@ -4,7 +4,7 @@ Side Project Student-Management-System for practicing Spring Boot project.
 
 Application in CRUD, include create new student, update student, delete student, and show all students in homepage.
 
-## Core tool    
+## Core  tool    
 - Spring Boot frame work
 - JPA Reposity
 - Thyemleaf
