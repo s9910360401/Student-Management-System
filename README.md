@@ -6,7 +6,7 @@ Application in CRUD, include create new student, update student, delete student,
 
 ## Core tech and  tool    
 - Spring Boot frame work
-- JPA Reposity
+- JPA Repository
 - Thyemleaf
 - MySQL database
 - Bootstrap
